@@ -1,0 +1,238 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    height: 100vh;
+    
+ 
+    .rocket{
+        width: 100%;
+        max-width: 480px; 
+
+        img{
+            width: 19.2rem;
+            height: 3.7rem;
+            margin-bottom: 6.6rem;
+        }
+
+        h1{
+            font-size: 5.4rem;
+            color: var(--color-text)
+        }
+    }
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+    
+        width: 100%;
+        max-width: 480px;
+        padding: 6.4rem;
+        
+        border-radius: 5px;
+        background-color: var(--color-container);
+        margin-left: 10rem;
+        
+        p {
+            color: #fff;
+    
+            font-size: 1.4rem;
+            text-align: center;
+        
+            margin: 2.4rem 0 0;
+        }
+    
+        .containerInput{
+            display: grid;
+            gap: 10px;
+    
+            .input{
+                position: relative;
+    
+                input{
+                    font-size: 1.6rem;
+    
+                    width: 100%;
+                    height: 5rem;
+    
+                    border: none;
+                    border-radius: 5px;
+                    padding: 0 1.6rem 0 4.2rem;
+    
+                    color: #fff;
+                    background-color: var(--color-background);
+                }
+    
+                .divEmail{
+                    position: absolute;
+                    top: 17px;
+                    left: 16px;
+                    font-size: 14px;
+    
+                }
+    
+                .divEmail svg{
+                    fill: rgb(40, 39, 44);
+                    stroke: rgb(40, 39, 44);  
+                }
+                
+                .inputEmail:focus{
+                    border: 2px solid var(--color-primary);
+                }
+    
+                .divSenha{
+                    position: absolute;
+                    top: 17px;
+                    left: 16px;
+                    font-size: 14px;
+                }
+    
+                .divSenha svg{
+                    fill: rgb(40, 39, 44);
+                    stroke: rgb(40, 39, 44);  
+                }
+    
+                .inputSenha:focus{
+                    border: 2px solid var(--color-primary);
+                }
+    
+                .eye{
+                    font-size: 18px;
+                    position: absolute;
+                    top: 16px;
+                    right: 16px;
+                }
+    
+                .eye svg{
+                    fill: rgb(130, 87, 229);
+                    stroke: rgb(130, 87, 229);
+                }
+            }
+    
+        }
+    
+       
+        .linkPurple{
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: .8rem 0 2.4rem;
+        
+            transition: opacity 100ms;
+            color: var(--color-primary); 
+            opacity: .7;
+            
+    
+            &:hover{
+                opacity: 1;
+            }
+        }
+    
+        .linkPurple:last-child{
+            margin-left: 1rem;
+        }
+    
+        .buttonLog{
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        
+            height: 5rem;
+            
+            border-radius: 5px;
+            border: none;
+            color:#fff;
+            background: rgb(65, 53, 107);
+        
+            transition: background 0.2s ease 0s, color 0.2s ease 0s;
+            cursor:not-allowed;
+        }
+    
+        .line{
+            height: 4rem;
+            position: relative;
+            
+            &::before{
+                content: "";
+        
+                width: calc(50% - 25px);
+                height: 1px;
+                
+                position: absolute;
+                top: 60%;
+                left: 0;
+    
+                background: rgb(40, 39, 47);
+            }
+    
+            &::after{
+                content: "";
+    
+                width: calc(50% - 25px);
+                height: 1px;
+    
+                position: absolute;
+                top: 60%;
+                right: 0;
+    
+                background: rgb(40, 39, 47)
+            }
+        }
+    
+        .networkGithub{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+            margin-top: 2rem;
+    
+            div{
+                font-size: 1.4rem;
+    
+                white-space: nowrap;
+                margin-right: 2.4rem;
+    
+                color: #fff;
+            }
+    
+            .buttonGit{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                font-size: 1.6rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                
+                padding: 0 6rem; 
+                border-radius: 5px;
+                width: 100%;
+                height: 5rem;
+    
+                color: #fff;
+                background-color: var(--color-container-light);
+    
+                transition: background 300ms;
+                cursor: pointer;
+    
+                &:hover{
+                    background-color: var(--color-primary-hover);
+                }
+    
+                svg{
+                    margin-right: 1rem;
+                }
+    
+                
+    
+            }
+        }
+    }
+}
+
+@media(max-width: 929px){
+    .containerLogo{
+        margin-bottom: 6rem;
+    }
+}
