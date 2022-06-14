@@ -1,4 +1,6 @@
-<h2 align="center">Tela de login da Rocketseat</h2>
+<h2 align="center">Clone da tela de login da Rocketseat</h2>
+
+
 
 &nbsp;
 
